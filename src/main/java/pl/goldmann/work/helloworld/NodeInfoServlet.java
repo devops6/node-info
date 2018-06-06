@@ -16,6 +16,7 @@ public class NodeInfoServlet extends HttpServlet {
         resp.setContentType("text/plain");
         PrintWriter writer = resp.getWriter();
         writer.println("Hostname: " + System.getProperty("jboss.host.name"));
+        writer.println("narayan"));
         writer.println("Java Runtime: " + System.getProperty("java.runtime.name") + " " + System.getProperty("java.runtime.version"));
         writer.println("OS: " + System.getProperty("os.name") + " " + System.getProperty("os.arch") + " " + System.getProperty("os.version"));
         writer.close();
